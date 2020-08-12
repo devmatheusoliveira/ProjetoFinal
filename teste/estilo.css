@@ -1,0 +1,238 @@
+    /* Lembre-se que usamos os seletores:
+    "#" para id
+    "." para class */
+
+body{
+    margin: 0px;
+    font-family: 'Arial';
+    animation: background 15s infinite;
+    
+}
+
+header{
+    height: 60px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    
+}
+
+#menu{
+    float: right;
+    margin-right: 5%;
+    z-index: 10;
+}
+#menu li{
+    top: 0px;
+    float: left;
+    padding: 30px;
+    list-style: none;
+}
+
+.rodape {
+    z-index: 10;
+    height: 100px;
+    width: 100%;
+    background-color: gray;
+    animation: rodape 15s infinite;
+    box-shadow: 0 0 1em gray;
+    text-align: left;
+}
+
+.rodape img{
+    height: 100px;
+    margin-left: 0;
+}
+
+#testes{
+    top: 0px;
+    position: fixed;
+    margin-right:100%;
+    
+}
+
+.ods{
+    color: white;
+    padding-top: 0.25%;
+    padding: 10px;
+    padding-bottom: 20vh;
+    background-color: #d63031;
+
+}
+.ods h2,h3{
+    text-align: center;
+}
+
+.paragrafos{
+    color: white;
+    padding: 0px 10px 0px 10px;
+}
+
+
+.quemSomos{
+    color: white;
+    padding-top: 0.25%;
+    padding-bottom: 0.5%;
+    background-color: rgb(0, 0, 0,0.5);
+    padding-inline-start: 10px;
+}
+
+section#redesSociais img{
+    height: 50px;
+    transition: 0.5s;
+}
+
+section#redesSociais img:hover{
+    transform: scale(0.85);
+}
+
+.iconsRedes{
+    color: transparent;
+    margin: 0% 25px 0% 25px;
+    height: 100px;
+    transition: 0.3s;
+}
+.iconsRedes:hover{
+    margin: 0% 25px 0% 25px;
+    transform: scale(0.85);
+}
+
+#redesSociais{
+    color: white;
+    padding-top: 0.25%;
+    padding-bottom: 0.5%;
+    background-color: #3498db; 
+}
+
+#video-monitor{
+    background-image: url(img/monitor.png);
+
+}
+
+
+.textoBotoes{
+    color: white;
+    position: relative;
+    padding-top: 10px;
+    margin: 0px;
+}
+
+#logomarca{
+    margin-bottom: 50%;
+}
+
+#onoff img{
+    height: 300px;
+    margin: 10% 0px 10% 0px;
+    position: absolute;
+    left: 33%;  
+    text-align: center;
+    animation: logoAnim 2s forwards;
+}
+#logo-ligada{
+    opacity: 0%;
+    transition: 0.3s;
+}
+#logo-ligada:hover{
+    opacity: 100%;
+}
+
+.divisor{
+    position: relative;
+    float: left;
+    left: 45vw;
+    padding-bottom:50vh;
+    margin: 0;
+    top: 50px;
+    width: 10px;
+    background-color: white;
+    opacity: 50%;
+    border-radius: 10px;
+}
+
+.centralizado{
+    text-align: center;  
+}
+
+.lista{
+    position: relative;
+    float: left;
+}
+.lista li{
+    margin: 20px 10px;
+    list-style: none;
+}
+
+.coluna{
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    width: 40%;
+}
+#coluna-img{
+    position: relative;
+    float: left;
+    padding: 0 5%;
+    box-shadow: rgb(0, 0, 0,0.5);
+}
+
+#escola-do-futuro{
+    margin-top: 30px;
+    margin-bottom: 80vh;
+}
+
+.coluna4{
+    float: left;
+    padding: 0 2%;
+    position: relative;
+    width: 15%;
+}
+
+
+@keyframes logoAnim {
+    0% {
+        height: 100px;
+        left: 100%;
+    }
+    50%{
+        height: 100px;
+        left: 33%;
+    }
+    100% {
+        height: 300px;
+    } 
+}
+@keyframes background {
+    0% {
+      background-color: #55efc4;
+    }
+    20% {
+      background-color: #b2bec3;
+    }
+    40% {
+      background-color: #74b9ff;
+    } 
+    60% {
+      background-color: #ffeaa7;
+    } 
+    100% {
+      background-color: #55efc4;
+    } 
+}
+@keyframes rodape {
+    0% {
+      background-color: #41c09c;
+    }
+    20% {
+      background-color: #95a1a7;
+    }
+    40% {
+      background-color: #619cd8;
+    } 
+    60% {
+      background-color: #c7b67f;
+    } 
+    100% {
+      background-color: #41c09c;
+    } 
+}

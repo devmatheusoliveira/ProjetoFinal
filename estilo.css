@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Mulish', sans-serif;
+    margin: 0px;
+    animation: background 15s infinite;
+    
+}
+html, *, *:link{
+    margin: 0;
+    padding: 0;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    height: 60px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    
+}
+
+#menu{
+    float: right;
+    margin-right: 5%;
+    z-index: 10;
+}
+#menu li{
+    top: 0px;
+    font-size: 20px;
+    float: left;
+    padding: 30px;
+    list-style: none;
+}
+#menu li:hover{
+    transform: scale(0.85);
+}
+
+.rodape {
+    z-index: 10;
+    height: 100px;
+    width: 100%;
+    background-color: gray;
+    animation: rodape 15s infinite;
+    box-shadow: 0 0 1em gray;
+    text-align: left;
+}
+
+.rodape img{
+    height: 100px;
+    margin-left: 0;
+}
+
+#testes{
+    top: 0px;
+    position: fixed;
+    margin-right:100%;
+    
+}
+
+#ods{
+    color: white;
+    padding: 10px;
+    padding-top: 3%;
+    padding-bottom: 20vh;
+    background-color: rgba(255, 250, 250, 0.1);
+
+}
+#ods h2,h3{
+    text-align: center;
+}
+
+#aulas-criativas{
+    padding-top: 3%;
+    background-color: rgba(255, 250, 250, 0.1);
+    size: 300vh;
+}
+
+.paragrafos{
+    color: white;
+    padding: 0px 10px 0px 10px;
+}
+
+
+.quemSomos{
+    color: white;
+    padding-top: 0.25%;
+    padding-bottom: 0.5%;
+    padding-inline-start: 10px;
+}
+.quemSomos p {
+    padding: 20px;
+}
+
+section#redesSociais img{
+    height: 50px;
+    transition: 0.5s;
+}
+
+section#redesSociais img:hover{
+    transform: scale(0.85);
+}
+
+.iconsRedes{
+    color: transparent;
+    margin: 0% 25px 0% 25px;
+    height: 100px;
+    transition: 0.3s;
+}
+.iconsRedes:hover{
+    margin: 0% 25px 0% 25px;
+    transform: scale(0.85);
+}
+
+#redesSociais{
+    color: white;
+    padding-top: 0.25%;
+    padding-bottom: 0.5%;
+    background-color: rgba(0, 0, 0, 0.4);     
+}
+
+#video-monitor{
+    position: absolute;
+    padding-top: 8.7%;
+    left: 19.7%;
+}
+
+
+.textoBotoes{
+    color: white;
+    position: relative;
+    padding-top: 10px;
+    margin: 0px;
+}
+
+#logomarca{
+    margin-bottom: 50%;
+}
+
+#onoff img{
+    height: 300px;
+    margin: 10% 0px 10% 0px;
+    position: absolute;
+    left: 33%;  
+    text-align: center;
+    animation: logoAnim 2s forwards;
+}
+#logo-ligada{
+    opacity: 0%;
+    transition: 0.3s;
+}
+#logo-ligada:hover{
+    opacity: 100%;
+}
+
+.divisor{
+    position: relative;
+    float: left;
+    left: 45vw;
+    padding-bottom:50vh;
+    margin: 0;
+    top: 50px;
+    width: 10px;
+    background-color: white;
+    opacity: 50%;
+    border-radius: 10px;
+}
+
+.centralizado{
+    text-align: center;  
+}
+
+.lista{
+    position: relative;
+    float: left;
+}
+.lista li{
+    margin: 20px 10px;
+    list-style: none;
+}
+
+.coluna{
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    width: 40%;
+}
+#coluna-img{
+    position: relative;
+    float: left;
+    padding: 0 5%;
+}
+
+#escola-do-futuro{
+    padding-top: 3%;
+    margin-top: 30px;
+    margin-bottom: 100vh;
+}
+
+.coluna4{
+    float: left;
+    padding: 0 2%;
+    position: relative;
+    width: 15%;
+}
+
+
+/*        Grade        */
+.col-1 {
+    width: 8.333%
+}
+.col-2 {
+    width: 16.666%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.333%;
+}
+.col-5 {
+    width: 41,666%
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.333%;
+}
+.col-8 {
+    width: 66.666%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.333%;
+}
+.col-11 {
+    width: 91.666%;
+}
+.col-12 {
+    width: 100%;
+}
+
+/*        Animações       */
+@keyframes logoAnim {
+    0% {
+        height: 100px;
+        left: 100%;
+    }
+    50%{
+        height: 100px;
+        left: 33%;
+    }
+    100% {
+        height: 300px;
+    } 
+}
+@keyframes background {
+    0% {
+        background-color: #0984e3;
+    }
+    33% {
+        background-color: #00b894;
+    }
+    66% {
+        background-color: #6c5ce7;
+    } 
+    100% {
+      background-color: #0984e3;
+    } 
+}
+@keyframes rodape {
+    0% {
+        background-color: #0b74c5;
+    }
+    33% {
+        background-color: #008a6e;
+    }
+    66% {
+        background-color: #5445c5;
+    } 
+    100% {
+      background-color: #0b74c5;
+    } 
+}
+
+
+/* fgdfgdfgdgdgdfgdfgdfgdfg */
+
+
+.title {
+    text-align: center;
+    margin: 50px 0px;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+}
+.subtitle {
+    text-align: center;
+    margin: 30px 0px;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+
+.container {
+    max-width: 1127px;
+    margin: 0 auto!important;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.col {
+    width: 100%;
+}
+
+.box {
+    padding: 0px 20px 60px 0px ;
+    text-align: center;
+    transition: all ease .3s;
+    opacity: 30%;
+}
+.box:hover {
+    opacity: 100%;
+    transform: scale(1.4);
+}
+.box img {
+    opacity: 100%;
+    max-width: 100px;
+    margin-bottom: 10px;
+    transition: all ease .3s;
+}
+.box img:hover {
+    transform: scale(0.9);
+}
+.box h4 {
+    font-size: 22px;
+    font-weight: 600;
+}
+.box p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.img-responsive {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .rodape img{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        
+    }
+    #menu {
+        visibility: hidden;
+    }
+    .grid {
+        flex-direction: column;
+        padding: 0px 20%;
+    }
+    .col {
+        width: 100%!important;
+    }
+
+    #logomarca {
+        transform: translateX(-50%);
+        transform: translateY(50%);
+        padding-bottom: 50vh;
+    }
+    @keyframes logoAnim {
+        100% {
+            height: 60%;
+            left: 25%;
+        }
+    }
+    .coluna img,iframe{
+        visibility: hidden;
+    }
+    .coluna{
+        width: 100%;
+        
+    }
+    #coluna-img{
+        width: 80vw;
+        padding-bottom: 10px;
+    }
+    .divisor{
+        visibility: hidden;
+    }
+    #logo-ligada{
+        opacity: 100%;
+    }
+
+    #video-monitor{
+        position: absolute;
+        padding-top: 8.7%;
+        width: 100%;
+    }
+}
