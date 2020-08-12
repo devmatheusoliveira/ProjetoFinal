@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
 
 body{
-    font-family: 'Mulish', sans-serif;
     font-size: 20px;
-    margin: 0px;
     animation: background 15s infinite;
     
 }
@@ -13,6 +11,7 @@ html, *, *:link{
     color: white;
     list-style: none;
     text-decoration: none;
+    font-family: 'Mulish', sans-serif;
 }
 
 header{
@@ -361,8 +360,11 @@ section#redesSociais img:hover{
         transform: translateX(-50%);
         
     }
+    .rodape{
+        width: 100%;        
+    }
     #menu {
-        visibility: hidden;
+        display: none!important;
     }
     .grid {
         flex-direction: column;
@@ -379,7 +381,7 @@ section#redesSociais img:hover{
     }
     @keyframes logoAnim {
         100% {
-            height: 60%;
+            height: 30%;
             left: 50%;
         }
     }
@@ -402,6 +404,7 @@ section#redesSociais img:hover{
         display: none!important;
     }
     #logo-ligada{
+        height: 30%;
         opacity: 100%;
     }
 
@@ -409,5 +412,8 @@ section#redesSociais img:hover{
         position: absolute;
         padding-top: 8.7%;
         width: 100%;
+    }
+    #testes{
+        display: none!important;
     }
 }
