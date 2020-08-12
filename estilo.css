@@ -140,10 +140,11 @@ section#redesSociais img:hover{
 }
 
 #onoff img{
+    left: 50%;
+    transform: translateX(-50%);
     height: 300px;
     margin: 10% 0px 10% 0px;
-    position: absolute;
-    left: 33%;  
+    position: absolute; 
     text-align: center;
     animation: logoAnim 2s forwards;
 }
@@ -253,7 +254,7 @@ section#redesSociais img:hover{
     }
     50%{
         height: 100px;
-        left: 33%;
+        left: 50%;
     }
     100% {
         height: 300px;
@@ -378,22 +379,26 @@ section#redesSociais img:hover{
     @keyframes logoAnim {
         100% {
             height: 60%;
-            left: 25%;
+            left: 50%;
         }
     }
     .coluna img,iframe{
-        visibility: hidden;
+        display: none!important;
+        height: 0px;
+    }
+    .box{
+        opacity: 100%;
     }
     .coluna{
         width: 100%;
-        
     }
+
     #coluna-img{
         width: 80vw;
         padding-bottom: 10px;
     }
     .divisor{
-        visibility: hidden;
+        display: none!important;
     }
     #logo-ligada{
         opacity: 100%;
